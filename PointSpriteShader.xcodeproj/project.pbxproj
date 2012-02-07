@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00686C2E14E1CA6000AEA209 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00686C2D14E1CA6000AEA209 /* Cocoa.framework */; };
+		00686C3814E1CA6000AEA209 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00686C3614E1CA6000AEA209 /* InfoPlist.strings */; };
+		00686C3A14E1CA6000AEA209 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00686C3914E1CA6000AEA209 /* main.m */; };
+		00686C4114E1CA6000AEA209 /* PSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00686C4014E1CA6000AEA209 /* PSAppDelegate.m */; };
+		00686C4414E1CA6000AEA209 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00686C4214E1CA6000AEA209 /* MainMenu.xib */; };
+		00686C4C14E1CA8E00AEA209 /* PSGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00686C4B14E1CA8E00AEA209 /* PSGLView.m */; };
+		00686C5714E1CB0700AEA209 /* GHGLUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00686C5414E1CB0700AEA209 /* GHGLUtils.m */; };
+		00686C5814E1CB0700AEA209 /* GHTextureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00686C5614E1CB0700AEA209 /* GHTextureManager.m */; };
+		00686C5B14E1CB4300AEA209 /* GHGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 00686C5A14E1CB4300AEA209 /* GHGLProgram.m */; };
+		00686C6014E1CC7100AEA209 /* GHGLTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 00686C5F14E1CC7100AEA209 /* GHGLTexture.m */; };
+		00686C6614E1CCE600AEA209 /* BGGLParticleBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 00686C6314E1CCE600AEA209 /* BGGLParticleBuffer.m */; };
+		00686C6714E1CCE600AEA209 /* BGParticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 00686C6514E1CCE600AEA209 /* BGParticle.m */; };
+		00686C6B14E1CD9800AEA209 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00686C6814E1CD9800AEA209 /* CoreVideo.framework */; };
+		00686C6C14E1CD9800AEA209 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00686C6914E1CD9800AEA209 /* GLUT.framework */; };
+		00686C6D14E1CD9800AEA209 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00686C6A14E1CD9800AEA209 /* OpenGL.framework */; };
+		00686C6E14E1CDD200AEA209 /* Particles.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 00686C5014E1CAAF00AEA209 /* Particles.fsh */; };
+		00686C6F14E1CDD500AEA209 /* Particles.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 00686C5114E1CAAF00AEA209 /* Particles.vsh */; };
+		00686C7014E1CFCD00AEA209 /* particle64.png in Resources */ = {isa = PBXBuildFile; fileRef = 00686C4E14E1CAAF00AEA209 /* particle64.png */; };
+		00686C7314E1D01900AEA209 /* Particles.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 00686C5014E1CAAF00AEA209 /* Particles.fsh */; };
+		00686C7414E1D01B00AEA209 /* Particles.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 00686C5114E1CAAF00AEA209 /* Particles.vsh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00686C2914E1CA6000AEA209 /* PointSpriteShader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PointSpriteShader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00686C2D14E1CA6000AEA209 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		00686C3014E1CA6000AEA209 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		00686C3114E1CA6000AEA209 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		00686C3214E1CA6000AEA209 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		00686C3514E1CA6000AEA209 /* PointSpriteShader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PointSpriteShader-Info.plist"; sourceTree = "<group>"; };
+		00686C3714E1CA6000AEA209 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		00686C3914E1CA6000AEA209 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00686C3B14E1CA6000AEA209 /* PointSpriteShader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PointSpriteShader-Prefix.pch"; sourceTree = "<group>"; };
+		00686C3F14E1CA6000AEA209 /* PSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSAppDelegate.h; sourceTree = "<group>"; };
+		00686C4014E1CA6000AEA209 /* PSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSAppDelegate.m; sourceTree = "<group>"; };
+		00686C4314E1CA6000AEA209 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		00686C4A14E1CA8E00AEA209 /* PSGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSGLView.h; sourceTree = "<group>"; };
+		00686C4B14E1CA8E00AEA209 /* PSGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSGLView.m; sourceTree = "<group>"; };
+		00686C4E14E1CAAF00AEA209 /* particle64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle64.png; sourceTree = "<group>"; };
+		00686C5014E1CAAF00AEA209 /* Particles.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Particles.fsh; sourceTree = "<group>"; };
+		00686C5114E1CAAF00AEA209 /* Particles.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Particles.vsh; sourceTree = "<group>"; };
+		00686C5314E1CB0700AEA209 /* GHGLUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGLUtils.h; sourceTree = "<group>"; };
+		00686C5414E1CB0700AEA209 /* GHGLUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHGLUtils.m; sourceTree = "<group>"; };
+		00686C5514E1CB0700AEA209 /* GHTextureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHTextureManager.h; sourceTree = "<group>"; };
+		00686C5614E1CB0700AEA209 /* GHTextureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHTextureManager.m; sourceTree = "<group>"; };
+		00686C5914E1CB4300AEA209 /* GHGLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGLProgram.h; sourceTree = "<group>"; };
+		00686C5A14E1CB4300AEA209 /* GHGLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHGLProgram.m; sourceTree = "<group>"; };
+		00686C5C14E1CC3700AEA209 /* GHGLCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGLCommon.h; sourceTree = "<group>"; };
+		00686C5D14E1CC5300AEA209 /* GHGLDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGLDefines.h; sourceTree = "<group>"; };
+		00686C5E14E1CC7100AEA209 /* GHGLTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGLTexture.h; sourceTree = "<group>"; };
+		00686C5F14E1CC7100AEA209 /* GHGLTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHGLTexture.m; sourceTree = "<group>"; };
+		00686C6214E1CCE600AEA209 /* BGGLParticleBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGLParticleBuffer.h; sourceTree = "<group>"; };
+		00686C6314E1CCE600AEA209 /* BGGLParticleBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGLParticleBuffer.m; sourceTree = "<group>"; };
+		00686C6414E1CCE600AEA209 /* BGParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGParticle.h; sourceTree = "<group>"; };
+		00686C6514E1CCE600AEA209 /* BGParticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGParticle.m; sourceTree = "<group>"; };
+		00686C6814E1CD9800AEA209 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		00686C6914E1CD9800AEA209 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		00686C6A14E1CD9800AEA209 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00686C2614E1CA6000AEA209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00686C6B14E1CD9800AEA209 /* CoreVideo.framework in Frameworks */,
+				00686C6C14E1CD9800AEA209 /* GLUT.framework in Frameworks */,
+				00686C6D14E1CD9800AEA209 /* OpenGL.framework in Frameworks */,
+				00686C2E14E1CA6000AEA209 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00686C1E14E1CA6000AEA209 = {
+			isa = PBXGroup;
+			children = (
+				00686C3314E1CA6000AEA209 /* PointSpriteShader */,
+				00686C2C14E1CA6000AEA209 /* Frameworks */,
+				00686C2A14E1CA6000AEA209 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00686C2A14E1CA6000AEA209 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00686C2914E1CA6000AEA209 /* PointSpriteShader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00686C2C14E1CA6000AEA209 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00686C6814E1CD9800AEA209 /* CoreVideo.framework */,
+				00686C6914E1CD9800AEA209 /* GLUT.framework */,
+				00686C6A14E1CD9800AEA209 /* OpenGL.framework */,
+				00686C2D14E1CA6000AEA209 /* Cocoa.framework */,
+				00686C2F14E1CA6000AEA209 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00686C2F14E1CA6000AEA209 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00686C3014E1CA6000AEA209 /* AppKit.framework */,
+				00686C3114E1CA6000AEA209 /* CoreData.framework */,
+				00686C3214E1CA6000AEA209 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		00686C3314E1CA6000AEA209 /* PointSpriteShader */ = {
+			isa = PBXGroup;
+			children = (
+				00686C4A14E1CA8E00AEA209 /* PSGLView.h */,
+				00686C4B14E1CA8E00AEA209 /* PSGLView.m */,
+				00686C3F14E1CA6000AEA209 /* PSAppDelegate.h */,
+				00686C4014E1CA6000AEA209 /* PSAppDelegate.m */,
+				00686C4214E1CA6000AEA209 /* MainMenu.xib */,
+				00686C6114E1CCE600AEA209 /* Particle */,
+				00686C5214E1CB0700AEA209 /* GHGL */,
+				00686C4D14E1CAAF00AEA209 /* Resources */,
+				00686C3414E1CA6000AEA209 /* Supporting Files */,
+			);
+			path = PointSpriteShader;
+			sourceTree = "<group>";
+		};
+		00686C3414E1CA6000AEA209 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00686C3514E1CA6000AEA209 /* PointSpriteShader-Info.plist */,
+				00686C3614E1CA6000AEA209 /* InfoPlist.strings */,
+				00686C3914E1CA6000AEA209 /* main.m */,
+				00686C3B14E1CA6000AEA209 /* PointSpriteShader-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00686C4D14E1CAAF00AEA209 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				00686C4E14E1CAAF00AEA209 /* particle64.png */,
+				00686C4F14E1CAAF00AEA209 /* Shaders */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		00686C4F14E1CAAF00AEA209 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				00686C5014E1CAAF00AEA209 /* Particles.fsh */,
+				00686C5114E1CAAF00AEA209 /* Particles.vsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		00686C5214E1CB0700AEA209 /* GHGL */ = {
+			isa = PBXGroup;
+			children = (
+				00686C5E14E1CC7100AEA209 /* GHGLTexture.h */,
+				00686C5F14E1CC7100AEA209 /* GHGLTexture.m */,
+				00686C5D14E1CC5300AEA209 /* GHGLDefines.h */,
+				00686C5C14E1CC3700AEA209 /* GHGLCommon.h */,
+				00686C5914E1CB4300AEA209 /* GHGLProgram.h */,
+				00686C5A14E1CB4300AEA209 /* GHGLProgram.m */,
+				00686C5314E1CB0700AEA209 /* GHGLUtils.h */,
+				00686C5414E1CB0700AEA209 /* GHGLUtils.m */,
+				00686C5514E1CB0700AEA209 /* GHTextureManager.h */,
+				00686C5614E1CB0700AEA209 /* GHTextureManager.m */,
+			);
+			path = GHGL;
+			sourceTree = "<group>";
+		};
+		00686C6114E1CCE600AEA209 /* Particle */ = {
+			isa = PBXGroup;
+			children = (
+				00686C6214E1CCE600AEA209 /* BGGLParticleBuffer.h */,
+				00686C6314E1CCE600AEA209 /* BGGLParticleBuffer.m */,
+				00686C6414E1CCE600AEA209 /* BGParticle.h */,
+				00686C6514E1CCE600AEA209 /* BGParticle.m */,
+			);
+			path = Particle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00686C2814E1CA6000AEA209 /* PointSpriteShader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00686C4714E1CA6000AEA209 /* Build configuration list for PBXNativeTarget "PointSpriteShader" */;
+			buildPhases = (
+				00686C2514E1CA6000AEA209 /* Sources */,
+				00686C2614E1CA6000AEA209 /* Frameworks */,
+				00686C2714E1CA6000AEA209 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PointSpriteShader;
+			productName = PointSpriteShader;
+			productReference = 00686C2914E1CA6000AEA209 /* PointSpriteShader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00686C2014E1CA6000AEA209 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 00686C2314E1CA6000AEA209 /* Build configuration list for PBXProject "PointSpriteShader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 00686C1E14E1CA6000AEA209;
+			productRefGroup = 00686C2A14E1CA6000AEA209 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00686C2814E1CA6000AEA209 /* PointSpriteShader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00686C2714E1CA6000AEA209 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00686C3814E1CA6000AEA209 /* InfoPlist.strings in Resources */,
+				00686C4414E1CA6000AEA209 /* MainMenu.xib in Resources */,
+				00686C7014E1CFCD00AEA209 /* particle64.png in Resources */,
+				00686C7414E1D01B00AEA209 /* Particles.vsh in Resources */,
+				00686C7314E1D01900AEA209 /* Particles.fsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00686C2514E1CA6000AEA209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00686C3A14E1CA6000AEA209 /* main.m in Sources */,
+				00686C4114E1CA6000AEA209 /* PSAppDelegate.m in Sources */,
+				00686C4C14E1CA8E00AEA209 /* PSGLView.m in Sources */,
+				00686C5714E1CB0700AEA209 /* GHGLUtils.m in Sources */,
+				00686C5814E1CB0700AEA209 /* GHTextureManager.m in Sources */,
+				00686C5B14E1CB4300AEA209 /* GHGLProgram.m in Sources */,
+				00686C6014E1CC7100AEA209 /* GHGLTexture.m in Sources */,
+				00686C6614E1CCE600AEA209 /* BGGLParticleBuffer.m in Sources */,
+				00686C6714E1CCE600AEA209 /* BGParticle.m in Sources */,
+				00686C6E14E1CDD200AEA209 /* Particles.fsh in Sources */,
+				00686C6F14E1CDD500AEA209 /* Particles.vsh in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		00686C3614E1CA6000AEA209 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00686C3714E1CA6000AEA209 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		00686C4214E1CA6000AEA209 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00686C4314E1CA6000AEA209 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00686C4514E1CA6000AEA209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		00686C4614E1CA6000AEA209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		00686C4814E1CA6000AEA209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PointSpriteShader/PointSpriteShader-Prefix.pch";
+				INFOPLIST_FILE = "PointSpriteShader/PointSpriteShader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		00686C4914E1CA6000AEA209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PointSpriteShader/PointSpriteShader-Prefix.pch";
+				INFOPLIST_FILE = "PointSpriteShader/PointSpriteShader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00686C2314E1CA6000AEA209 /* Build configuration list for PBXProject "PointSpriteShader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00686C4514E1CA6000AEA209 /* Debug */,
+				00686C4614E1CA6000AEA209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00686C4714E1CA6000AEA209 /* Build configuration list for PBXNativeTarget "PointSpriteShader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00686C4814E1CA6000AEA209 /* Debug */,
+				00686C4914E1CA6000AEA209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00686C2014E1CA6000AEA209 /* Project object */;
+}

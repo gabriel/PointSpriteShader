@@ -1,0 +1,10 @@
+//
+// Prefix header for all source files of the 'PointSpriteShader' target in the 'PointSpriteShader' project
+//
+
+#ifdef __OBJC__
+#import <Cocoa/Cocoa.h>
+#import <OpenGL/OpenGL.h>
+#import <OpenGL/gl.h>
+#import <OpenGL/glext.h>
+#endif
