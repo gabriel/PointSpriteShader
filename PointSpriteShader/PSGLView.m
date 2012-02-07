@@ -82,7 +82,7 @@ static CVReturn DisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTimeSt
   [_program linkProgram];
   [_program releaseShaders];
   
-  _buffer = [[BGGLParticleBuffer alloc] initWithCapacity:500];
+  _buffer = [[BGGLParticleBuffer alloc] initWithCapacity:5000]; // The total number of sprites to show at once
   
   glEnable(GL_POINT_SPRITE);
   glEnable(GL_VERTEX_PROGRAM_POINT_SIZE);
