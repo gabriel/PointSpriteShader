@@ -78,7 +78,7 @@ static CVReturn DisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTimeSt
   if (_program) return NO;
 
   _program = [[GHGLProgram alloc] init];  
-  [_program attachShaders:@"Particles"];
+  [_program attachShadersWithFragmentShader:@"Particles.fsh" vertexShader:@"Particles.vsh"];
   [_program linkProgram];
   [_program releaseShaders];
   

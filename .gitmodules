@@ -1,0 +1,3 @@
+[submodule "GHGLUtils"]
+	path = GHGLUtils
+	url = git@github.com:gabriel/GHGLUtils.git

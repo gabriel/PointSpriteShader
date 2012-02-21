@@ -13,10 +13,6 @@
 		00686C4114E1CA6000AEA209 /* PSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00686C4014E1CA6000AEA209 /* PSAppDelegate.m */; };
 		00686C4414E1CA6000AEA209 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00686C4214E1CA6000AEA209 /* MainMenu.xib */; };
 		00686C4C14E1CA8E00AEA209 /* PSGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00686C4B14E1CA8E00AEA209 /* PSGLView.m */; };
-		00686C5714E1CB0700AEA209 /* GHGLUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00686C5414E1CB0700AEA209 /* GHGLUtils.m */; };
-		00686C5814E1CB0700AEA209 /* GHTextureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00686C5614E1CB0700AEA209 /* GHTextureManager.m */; };
-		00686C5B14E1CB4300AEA209 /* GHGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 00686C5A14E1CB4300AEA209 /* GHGLProgram.m */; };
-		00686C6014E1CC7100AEA209 /* GHGLTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 00686C5F14E1CC7100AEA209 /* GHGLTexture.m */; };
 		00686C6614E1CCE600AEA209 /* BGGLParticleBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 00686C6314E1CCE600AEA209 /* BGGLParticleBuffer.m */; };
 		00686C6714E1CCE600AEA209 /* BGParticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 00686C6514E1CCE600AEA209 /* BGParticle.m */; };
 		00686C6B14E1CD9800AEA209 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00686C6814E1CD9800AEA209 /* CoreVideo.framework */; };
@@ -27,6 +23,10 @@
 		00686C7014E1CFCD00AEA209 /* particle64.png in Resources */ = {isa = PBXBuildFile; fileRef = 00686C4E14E1CAAF00AEA209 /* particle64.png */; };
 		00686C7314E1D01900AEA209 /* Particles.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 00686C5014E1CAAF00AEA209 /* Particles.fsh */; };
 		00686C7414E1D01B00AEA209 /* Particles.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 00686C5114E1CAAF00AEA209 /* Particles.vsh */; };
+		00E780B214F3235300FC4550 /* GHGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E780A214F3235300FC4550 /* GHGLProgram.m */; };
+		00E780B314F3235300FC4550 /* GHGLTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E780A414F3235300FC4550 /* GHGLTexture.m */; };
+		00E780B414F3235300FC4550 /* GHGLUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E780A714F3235300FC4550 /* GHGLUtils.m */; };
+		00E780B514F3235300FC4550 /* GHTextureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E780AA14F3235300FC4550 /* GHTextureManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,16 +47,6 @@
 		00686C4E14E1CAAF00AEA209 /* particle64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle64.png; sourceTree = "<group>"; };
 		00686C5014E1CAAF00AEA209 /* Particles.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Particles.fsh; sourceTree = "<group>"; };
 		00686C5114E1CAAF00AEA209 /* Particles.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Particles.vsh; sourceTree = "<group>"; };
-		00686C5314E1CB0700AEA209 /* GHGLUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGLUtils.h; sourceTree = "<group>"; };
-		00686C5414E1CB0700AEA209 /* GHGLUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHGLUtils.m; sourceTree = "<group>"; };
-		00686C5514E1CB0700AEA209 /* GHTextureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHTextureManager.h; sourceTree = "<group>"; };
-		00686C5614E1CB0700AEA209 /* GHTextureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHTextureManager.m; sourceTree = "<group>"; };
-		00686C5914E1CB4300AEA209 /* GHGLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGLProgram.h; sourceTree = "<group>"; };
-		00686C5A14E1CB4300AEA209 /* GHGLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHGLProgram.m; sourceTree = "<group>"; };
-		00686C5C14E1CC3700AEA209 /* GHGLCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGLCommon.h; sourceTree = "<group>"; };
-		00686C5D14E1CC5300AEA209 /* GHGLDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGLDefines.h; sourceTree = "<group>"; };
-		00686C5E14E1CC7100AEA209 /* GHGLTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGLTexture.h; sourceTree = "<group>"; };
-		00686C5F14E1CC7100AEA209 /* GHGLTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHGLTexture.m; sourceTree = "<group>"; };
 		00686C6214E1CCE600AEA209 /* BGGLParticleBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGGLParticleBuffer.h; sourceTree = "<group>"; };
 		00686C6314E1CCE600AEA209 /* BGGLParticleBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGGLParticleBuffer.m; sourceTree = "<group>"; };
 		00686C6414E1CCE600AEA209 /* BGParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGParticle.h; sourceTree = "<group>"; };
@@ -64,6 +54,18 @@
 		00686C6814E1CD9800AEA209 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		00686C6914E1CD9800AEA209 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		00686C6A14E1CD9800AEA209 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		00E7809F14F3235200FC4550 /* GHGLCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGLCommon.h; sourceTree = "<group>"; };
+		00E780A014F3235200FC4550 /* GHGLDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGLDefines.h; sourceTree = "<group>"; };
+		00E780A114F3235300FC4550 /* GHGLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGLProgram.h; sourceTree = "<group>"; };
+		00E780A214F3235300FC4550 /* GHGLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHGLProgram.m; sourceTree = "<group>"; };
+		00E780A314F3235300FC4550 /* GHGLTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGLTexture.h; sourceTree = "<group>"; };
+		00E780A414F3235300FC4550 /* GHGLTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHGLTexture.m; sourceTree = "<group>"; };
+		00E780A514F3235300FC4550 /* GHGLUCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGLUCommon.h; sourceTree = "<group>"; };
+		00E780A614F3235300FC4550 /* GHGLUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHGLUtils.h; sourceTree = "<group>"; };
+		00E780A714F3235300FC4550 /* GHGLUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHGLUtils.m; sourceTree = "<group>"; };
+		00E780A814F3235300FC4550 /* GHQuaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHQuaternion.h; sourceTree = "<group>"; };
+		00E780A914F3235300FC4550 /* GHTextureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHTextureManager.h; sourceTree = "<group>"; };
+		00E780AA14F3235300FC4550 /* GHTextureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHTextureManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +131,7 @@
 				00686C4014E1CA6000AEA209 /* PSAppDelegate.m */,
 				00686C4214E1CA6000AEA209 /* MainMenu.xib */,
 				00686C6114E1CCE600AEA209 /* Particle */,
-				00686C5214E1CB0700AEA209 /* GHGL */,
+				00E7809E14F3235200FC4550 /* GHGLUtils */,
 				00686C4D14E1CAAF00AEA209 /* Resources */,
 				00686C3414E1CA6000AEA209 /* Supporting Files */,
 			);
@@ -165,23 +167,6 @@
 			path = Shaders;
 			sourceTree = "<group>";
 		};
-		00686C5214E1CB0700AEA209 /* GHGL */ = {
-			isa = PBXGroup;
-			children = (
-				00686C5E14E1CC7100AEA209 /* GHGLTexture.h */,
-				00686C5F14E1CC7100AEA209 /* GHGLTexture.m */,
-				00686C5D14E1CC5300AEA209 /* GHGLDefines.h */,
-				00686C5C14E1CC3700AEA209 /* GHGLCommon.h */,
-				00686C5914E1CB4300AEA209 /* GHGLProgram.h */,
-				00686C5A14E1CB4300AEA209 /* GHGLProgram.m */,
-				00686C5314E1CB0700AEA209 /* GHGLUtils.h */,
-				00686C5414E1CB0700AEA209 /* GHGLUtils.m */,
-				00686C5514E1CB0700AEA209 /* GHTextureManager.h */,
-				00686C5614E1CB0700AEA209 /* GHTextureManager.m */,
-			);
-			path = GHGL;
-			sourceTree = "<group>";
-		};
 		00686C6114E1CCE600AEA209 /* Particle */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +176,26 @@
 				00686C6514E1CCE600AEA209 /* BGParticle.m */,
 			);
 			path = Particle;
+			sourceTree = "<group>";
+		};
+		00E7809E14F3235200FC4550 /* GHGLUtils */ = {
+			isa = PBXGroup;
+			children = (
+				00E7809F14F3235200FC4550 /* GHGLCommon.h */,
+				00E780A014F3235200FC4550 /* GHGLDefines.h */,
+				00E780A114F3235300FC4550 /* GHGLProgram.h */,
+				00E780A214F3235300FC4550 /* GHGLProgram.m */,
+				00E780A314F3235300FC4550 /* GHGLTexture.h */,
+				00E780A414F3235300FC4550 /* GHGLTexture.m */,
+				00E780A514F3235300FC4550 /* GHGLUCommon.h */,
+				00E780A614F3235300FC4550 /* GHGLUtils.h */,
+				00E780A714F3235300FC4550 /* GHGLUtils.m */,
+				00E780A814F3235300FC4550 /* GHQuaternion.h */,
+				00E780A914F3235300FC4550 /* GHTextureManager.h */,
+				00E780AA14F3235300FC4550 /* GHTextureManager.m */,
+			);
+			name = GHGLUtils;
+			path = ../GHGLUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,14 +266,14 @@
 				00686C3A14E1CA6000AEA209 /* main.m in Sources */,
 				00686C4114E1CA6000AEA209 /* PSAppDelegate.m in Sources */,
 				00686C4C14E1CA8E00AEA209 /* PSGLView.m in Sources */,
-				00686C5714E1CB0700AEA209 /* GHGLUtils.m in Sources */,
-				00686C5814E1CB0700AEA209 /* GHTextureManager.m in Sources */,
-				00686C5B14E1CB4300AEA209 /* GHGLProgram.m in Sources */,
-				00686C6014E1CC7100AEA209 /* GHGLTexture.m in Sources */,
 				00686C6614E1CCE600AEA209 /* BGGLParticleBuffer.m in Sources */,
 				00686C6714E1CCE600AEA209 /* BGParticle.m in Sources */,
 				00686C6E14E1CDD200AEA209 /* Particles.fsh in Sources */,
 				00686C6F14E1CDD500AEA209 /* Particles.vsh in Sources */,
+				00E780B214F3235300FC4550 /* GHGLProgram.m in Sources */,
+				00E780B314F3235300FC4550 /* GHGLTexture.m in Sources */,
+				00E780B414F3235300FC4550 /* GHGLUtils.m in Sources */,
+				00E780B514F3235300FC4550 /* GHTextureManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +385,7 @@
 				00686C4914E1CA6000AEA209 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
